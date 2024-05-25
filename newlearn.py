@@ -62,14 +62,16 @@ print((areaofsector(45,8)))
 
 
 
+
 #python code to calculate the discriminant value of numbers
 def discriminatvalue(a,b,c):
-    return float((b**2)-(4*a*c))
-print(discriminatvalue(4,0,-4))
+    return ((b**2)-(4*a*c))
+print(discriminatvalue(4,0,-1))
+
+
+
 
 #python code to find the smallest multiple of the first n numbers
-
-
 
 
 
