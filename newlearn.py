@@ -71,7 +71,59 @@ print(discriminatvalue(4,0,-1))
 
 
 
-#python code to find the smallest multiple of the first n numbers
+#python code for the sum of all the divisor of a number is given as
+
+
+
+
+
+#a function to add all the divisors of a positive number
+def adddivisor(thenumber):
+    emptylist=[]
+    for i in range(1,thenumber+1):
+        if thenumber%i==0:
+            emptylist.append(i)
+    return sum(emptylist)   #note where the return is, that it is directly below the name of the function that we defined
+print(adddivisor(10))
+
+
+#Python code to compute the square root of any number
+import math
+def sqrnumber(mynum):
+    if mynum<0:
+        return ('please enter a number greater than 0')
+    else:
+        return (math.sqrt(mynum))
+print(sqrnumber(32))
+
+
+#Python code to multiply two integers;
+def multiinteger(a,b):
+    return (a*b)
+print(multiinteger(3,15))
+
+
+
+#Python code to print out all the prime numbers between 1 and a particular number
+def primenum(particularnumber):
+    if(particularnumber<=1):
+        return False
+    listreturn=[]
+    for i in range (2, particularnumber+1):
+
+        
+                
+print(primenum(11))
+
+
+
+
+
+
+        
+
+
+        
 
 
 
