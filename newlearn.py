@@ -101,6 +101,8 @@ def sqrnumber(mynum):
 print(sqrnumber(32))
 
 
+
+
 #Python code to multiply two integers;
 def multiinteger(a,b):
     return (a*b)
@@ -116,8 +118,9 @@ def quadraticfunc(a,b,c):
     root1=(-b+cmath.sqrt(dis))/(2*a)
     root2=(b-cmath.sqrt(dis))/(2*a)
     return (root1, root2)
-
 print(quadraticfunc(2,3,4))
+
+
 
 
 
@@ -138,13 +141,11 @@ print(a+b)
 
 
 
-
 #a python code that returns the imaginary and the real parts of a complex number
 compy=complex(3,4)
 rely=compy.real   #notice this
 com=compy.imag     #notice this
 rsult=(rely, com,'j')
-
 
 
 
@@ -177,8 +178,8 @@ print(min(mynum))
 
 
 #a python code to find the sum of a list of numbers
-lst=[23,30.33,10,22.456,200.22,78.99]
-print(sum(lst))
+listy=[23,30.33,10,22.456,200.22,78.99]
+print(sum(listy))
 
 
 #a python program to get the square root and the exponential of a given number
