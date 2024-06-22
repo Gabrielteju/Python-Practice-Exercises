@@ -2,10 +2,10 @@
 
 
 calculated=5 + True      
-#print(calculated)
+print(calculated)
 
 
-#ASK CHAT GPT FOR NESTED LOOPS IN PYTHON
+
 #for us to filter thhe even numbers in the list provided below
 def filterEven(values):
     resultingvalues=[]
@@ -13,7 +13,25 @@ def filterEven(values):
         if i%2==0:
             resultingvalues.append(i)
     return resultingvalues
-print(filterEven([2,3,4,5,6,7,8,9,10,11,12,13,14]))
+#print(filterEven([2,3,4,5,6,7,8,9,10,11,12,13,14]))
+
+
+
+
+
+
+def filtereven(values):
+    resultevene=[]
+    for i in values:
+        if(i%2==0):
+            resultevene.append(i)
+    return (resultevene)
+print(filtereven([2,10,4,5,14,21,90]))
+
+
+
+
+
 
 
 
@@ -25,6 +43,8 @@ def degtorad(degg):
 print(degtorad(15))
 
 
+
+
 #A python code to convert Radian to Degree
 def radtodeg(radd):
     return ((180 * radd )/(pi))
@@ -32,10 +52,14 @@ print(radtodeg(.52))
 
 
 
+
 #Python code to calculate the area of a trapezoid
 def areaoftrap(base1,base2,height):
+    if(base1&base2&height)<0:
+        print('please input a  positive number')
     return(0.5*(base1+base2)*height)
 print(areaoftrap(5,6,5))
+
 
 
 #Python code to calculate the area of a parallelogram
@@ -44,15 +68,20 @@ def areaofparrallelogram(b,h):
 print(areaofparrallelogram(5,6))
 
 
+
 #Python code to calculate the surface area of and volme of a sphere
 #Volume of a sphere
 def volofsphere(radius):
     return ((4/3)* pi * (radius)**3)
 print(volofsphere(0.75))
+
+
+
 #Area of a sphere
 def areaofsphere(radius2):
     return (4*pi*(radius2)**2)
 print(areaofsphere(.75))
+
 
 
 #Python code to calculate the area of sector
@@ -103,10 +132,14 @@ print(sqrnumber(32))
 
 
 
+
 #Python code to multiply two integers;
 def multiinteger(a,b):
     return (a*b)
 print(multiinteger(3,15))
+
+
+
 
 
 
@@ -160,7 +193,7 @@ print(finalResult)
 
 
 import math
-#a python code to get the angle in a comple number
+#a python code to get the angle in a complex number
 compy3=complex(-2,4)
 firstside=abs(compy2.real)
 secondside=abs(compy2.imag)
@@ -182,9 +215,69 @@ listy=[23,30.33,10,22.456,200.22,78.99]
 print(sum(listy))
 
 
+
+
 #a python program to get the square root and the exponential of a given number
 numberr=23.1
 print(math.exp(numberr))
+
+
+#a python program to add, divide and multiply a complex number
+
+
+'''
+print('break')
+compy1=2+4j
+compy2=10+20j
+print(compy1+compy2)
+print(compy1 *compy2)
+print(compy1/compy2)
+print(compy1/4)
+
+'''
+
+#a python code to calculate the angle between a complex number
+import math
+def convertcom(complexy):
+    realpart=complexy.real
+    imgpart=complexy.imag
+    radianValue=(math.atan(imgpart / realpart))
+    return(math.degrees(radianValue))
+
+print(convertcom(3+5j))
+
+
+
+
+#a python code to calculate the length/resultant of a vector
+import math
+def convertcom(complexy):
+    realpart=complexy.real
+    imgpart=complexy.imag
+    modulo=((realpart)**2 + (imgpart)**2)
+    return(modulo)
+print(convertcom(3+4j))
+
+
+
+
+
+
+
+
+
+#a python program to create a fraction from a decimal number
+from fractions import Fraction
+def decimaltofrac(decimal_input):
+    result=Fraction(decimal_input).limit_denominator()
+    return result
+print(decimaltofrac(0.2))
+
+
+
+
+
+
 
 
 
